@@ -18,5 +18,22 @@ namespace InvoiceGenerator
             return TotalFare;
         }
 
+        /// <summary>
+        /// It calculate the multi ride fare of cab
+        /// return the total fare
+        /// </summary>
+        /// <param name="rides"></param>
+        /// <returns></returns>
+        public double CalculateMultiRideFare(List<Ride> rides)
+        {
+            double TotalFr = 0;
+            foreach (Ride ride in rides)
+            {
+                TotalFr += this.CalculateFare(ride.distance_in_km, ride.time_in_min);
+
+            }
+
+            return TotalFr;
+        }
     }
 }
