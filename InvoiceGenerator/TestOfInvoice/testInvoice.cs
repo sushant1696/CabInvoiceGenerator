@@ -40,5 +40,27 @@ namespace TestOfInvoice
             double expect = 200;//expected result 12*10+55+10+15=200
             Assert.AreEqual(expect, actual);
         }
+        /// <summary>
+        /// Return total no of ride.
+        /// </summary>
+        [Test]
+        public void GivenAllRides_ShouldReturn_Total_number_of_Ride()
+        {
+            List<Ride> l_rides = new List<Ride>();
+            l_rides.Add(new Ride { distance_in_km = 25, time_in_min = 5 });
+            l_rides.Add(new Ride { distance_in_km = 0, time_in_min = 56 });
+            l_rides.Add(new Ride { distance_in_km = 20, time_in_min = 65 });
+            l_rides.Add(new Ride { distance_in_km = 25, time_in_min = 0 });
+            Assert.AreEqual(invoice_Summary.Get_All_Rides(l_rides), l_rides.Count());
+        }
+        /// <summary>
+        ///  Return total fare
+        /// </summary>
+        [Test]
+        public void Get_Total_Fare()
+        {
+            List<Ride> ls = new List<Ride> { new Ride { distance_in_km = 190, time_in_min = 0 }, new Ride { distance_in_km = 0, time_in_min = 55 } };
+            Assert.AreEqual(1955.0, invoice_Summary.Total_fare(ls));
+        }
     }
 }
