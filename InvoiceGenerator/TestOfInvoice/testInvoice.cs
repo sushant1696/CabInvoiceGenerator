@@ -94,5 +94,15 @@ namespace TestOfInvoice
             riderepo.Add_Rides("12345", list_rides);
             Assert.AreEqual(3, riderepo.Get_User_Rides("12345"));
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        [Test]
+        public void GivenpremiumFare()
+        {
+            InvoiceGenerators obj = new InvoiceGenerators();
+            double result = obj.CalculateFare("premium", 2, 2);
+            Assert.AreEqual(34, result);
+        }
     }
 }
