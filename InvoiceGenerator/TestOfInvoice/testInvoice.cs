@@ -13,7 +13,8 @@ namespace TestOfInvoice
 {
     public class Tests
     {
-        
+       
+        RideRepository riderepo = new RideRepository();
         [Test]
         public void GivenDistanceAndTime_whereShouldReturnTotalFare()
         {
@@ -78,6 +79,17 @@ namespace TestOfInvoice
             list_rides.Add(new Ride { distance_in_km = 755, time_in_min = 0 });
             InvoiceSummary objjj = new InvoiceSummary();
             Assert.AreEqual(2760.0, objjj.Average_fare_per_ride(list_rides));
+        }
+
+        [Test]
+        public void Get_User_Rides_Count_by_User_Id()
+        {
+            List<Ride> list_rides = new List<Ride>();
+            list_rides.Add(new Ride { distance_in_km = 55, time_in_min = 85 });
+            list_rides.Add(new Ride { distance_in_km = 0, time_in_min = 95 });
+            list_rides.Add(new Ride { distance_in_km = 755, time_in_min = 0 });
+            riderepo.Add_Rides("12345", list_rides);
+            Assert.AreEqual(3, riderepo.Get_User_Rides("12345"));
         }
     }
 }
