@@ -21,9 +21,10 @@ namespace InvoiceGenerator
         /// </summary>
         /// <param name="rides"></param>
         /// <returns></returns>
-        public  double Total_fare( List<Ride> rides)
+        public  double Total_fare(string ride_type , List<Ride> rides)
+           
         {
-            return calfare.CalculateMultiRideFare(rides);
+            return calfare.CalculateMultiRideFare(ride_type,rides);
         }
         /// <summary>
         /// It return the total 
@@ -31,9 +32,9 @@ namespace InvoiceGenerator
         /// </summary>
         /// <param name="rides"></param>
         /// <returns></returns>
-        public double Average_fare_per_ride( List<Ride> rides)
+        public double Average_fare_per_ride(string ride_type, List<Ride> rides)
         {
-            return (calfare.CalculateMultiRideFare( rides) / (rides.Count) );
+            return (calfare.CalculateMultiRideFare(ride_type, rides) / (rides.Count) );
         }
     }
 }

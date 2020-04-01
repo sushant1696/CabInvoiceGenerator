@@ -7,15 +7,21 @@ namespace InvoiceGenerator
     public class InvoiceGenerators
     {
         private double Per_Km_Cost = 10;
+        private double Per_Km_Cost_premium = 15;
         private double Per_Minut_Cost = 1;
+        private double Per_Minut_Cost_premium = 2;
         private double Minimum_Cost = 5;
-
-        public double CalculateFare(double dist, double time)
+        private double Minimum_Cost_premium = 20;
+        double TotalFare;
+        public double CalculateFare(string str, double dist, double time)
         {
-            double TotalFare = dist * Per_Km_Cost + Per_Minut_Cost * time;
-            if (TotalFare < Minimum_Cost)
-                return Minimum_Cost;
-            return TotalFare;
+            if (str == "Normal")
+            {
+                TotalFare = dist * Per_Km_Cost + Per_Minut_Cost * time;
+                return Math.Max(TotalFare, Minimum_Cost);
+            }
+            TotalFare = dist * Per_Km_Cost_premium + Per_Minut_Cost_premium * time;
+            return Math.Max(TotalFare, Minimum_Cost_premium);
         }
 
         /// <summary>
@@ -24,12 +30,12 @@ namespace InvoiceGenerator
         /// </summary>
         /// <param name="rides"></param>
         /// <returns></returns>
-        public double CalculateMultiRideFare(List<Ride> rides)
+        public double CalculateMultiRideFare(string ride_type ,List<Ride> rides)
         {
             double TotalFr = 0;
             foreach (Ride ride in rides)
             {
-                TotalFr += this.CalculateFare(ride.distance_in_km, ride.time_in_min);
+                TotalFr += this.CalculateFare(ride_type ,ride.distance_in_km, ride.time_in_min);
 
             }
 

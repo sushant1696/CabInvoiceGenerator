@@ -19,7 +19,7 @@ namespace TestOfInvoice
         public void GivenDistanceAndTime_whereShouldReturnTotalFare()
         {
             InvoiceGenerators obj = new InvoiceGenerators();
-            double result = obj.CalculateFare(2, 2);
+            double result = obj.CalculateFare("Normal",2, 2);
             int expect = 22;
             Assert.AreEqual(expect, result);
         }
@@ -38,7 +38,7 @@ namespace TestOfInvoice
                  new Ride { distance_in_km = 0, time_in_min = 15 }
             };
             InvoiceGenerators obj = new InvoiceGenerators();
-            var actual = obj.CalculateMultiRideFare(list);
+            var actual = obj.CalculateMultiRideFare("Normal",list);
             double expect = 200;//expected result 12*10+55+10+15=200
             Assert.AreEqual(expect, actual);
         }
@@ -65,7 +65,7 @@ namespace TestOfInvoice
         {
             List<Ride> ls = new List<Ride> { new Ride { distance_in_km = 190, time_in_min = 0 }, new Ride { distance_in_km = 0, time_in_min = 55 } };
             InvoiceSummary objj = new InvoiceSummary();
-            Assert.AreEqual(1955.0, objj.Total_fare(ls));
+            Assert.AreEqual(1955.0, objj.Total_fare("Normal",ls));
         }
         /// <summary>
         /// Return Everage fare.
@@ -78,8 +78,11 @@ namespace TestOfInvoice
             list_rides.Add(new Ride { distance_in_km = 0, time_in_min = 95 });
             list_rides.Add(new Ride { distance_in_km = 755, time_in_min = 0 });
             InvoiceSummary objjj = new InvoiceSummary();
-            Assert.AreEqual(2760.0, objjj.Average_fare_per_ride(list_rides));
+            Assert.AreEqual(2760.0, objjj.Average_fare_per_ride("Normal",list_rides));
         }
+        /// <summary>
+        /// get all rides using user id
+        /// </summary>
 
         [Test]
         public void Get_User_Rides_Count_by_User_Id()
