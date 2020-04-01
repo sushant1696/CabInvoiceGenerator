@@ -32,10 +32,10 @@ namespace TestOfInvoice
         {
             //It creates the List for multi ride .
             List<Ride> list = new List<Ride> {
-                new Ride { distance_in_km = 12, time_in_min = 0 },
-                new Ride { distance_in_km = 0, time_in_min = 55 },
-                new Ride { distance_in_km = 0, time_in_min = 10 },
-                 new Ride { distance_in_km = 0, time_in_min = 15 }
+                new Ride ( 12, 0 ),
+                new Ride( 0,55 ),
+                new Ride (0,10 ),
+                 new Ride (0,15)
             };
             InvoiceGenerators obj = new InvoiceGenerators();
             var actual = obj.CalculateMultiRideFare("Normal",list);
@@ -48,7 +48,6 @@ namespace TestOfInvoice
         [Test]
         public void GivenAllRides_ShouldReturn_Total_number_of_Ride()
         {
-           
             List<Ride> listrides = new List<Ride>();
             listrides.Add(new Ride { distance_in_km = 25, time_in_min = 5 });
             listrides.Add(new Ride { distance_in_km = 0, time_in_min = 56 });
