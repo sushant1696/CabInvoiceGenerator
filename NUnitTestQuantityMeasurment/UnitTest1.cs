@@ -60,5 +60,16 @@ namespace NUnitTestQuantityMeasurment
             var expect = f.ConvertFeetValue(f2);
             Assert.IsTrue(expect);
         }
+        /// <summary>
+        /// Test Case 1.6 given diferent value
+        /// </summary>
+        [Test]
+        public void GivenDiferentValue_ShouldReturForFalse()
+        {
+            Feet f = new Feet(21);
+            Feet f2 = new Feet(999);
+            var expect = f.ConvertFeetValue(f2);
+            Assert.IsFalse(expect);
+        }
     }
 }
