@@ -1,0 +1,13 @@
+E:\DOT NET\QuantityMeasurmentProject\bin\Debug\netcoreapp3.1\QuantityMeasurmentProject.exe
+E:\DOT NET\QuantityMeasurmentProject\bin\Debug\netcoreapp3.1\QuantityMeasurmentProject.deps.json
+E:\DOT NET\QuantityMeasurmentProject\bin\Debug\netcoreapp3.1\QuantityMeasurmentProject.runtimeconfig.json
+E:\DOT NET\QuantityMeasurmentProject\bin\Debug\netcoreapp3.1\QuantityMeasurmentProject.runtimeconfig.dev.json
+E:\DOT NET\QuantityMeasurmentProject\bin\Debug\netcoreapp3.1\QuantityMeasurmentProject.dll
+E:\DOT NET\QuantityMeasurmentProject\bin\Debug\netcoreapp3.1\QuantityMeasurmentProject.pdb
+E:\DOT NET\QuantityMeasurmentProject\obj\Debug\netcoreapp3.1\QuantityMeasurmentProject.csprojAssemblyReference.cache
+E:\DOT NET\QuantityMeasurmentProject\obj\Debug\netcoreapp3.1\QuantityMeasurmentProject.csproj.CoreCompileInputs.cache
+E:\DOT NET\QuantityMeasurmentProject\obj\Debug\netcoreapp3.1\QuantityMeasurmentProject.AssemblyInfoInputs.cache
+E:\DOT NET\QuantityMeasurmentProject\obj\Debug\netcoreapp3.1\QuantityMeasurmentProject.AssemblyInfo.cs
+E:\DOT NET\QuantityMeasurmentProject\obj\Debug\netcoreapp3.1\QuantityMeasurmentProject.dll
+E:\DOT NET\QuantityMeasurmentProject\obj\Debug\netcoreapp3.1\QuantityMeasurmentProject.pdb
+E:\DOT NET\QuantityMeasurmentProject\obj\Debug\netcoreapp3.1\QuantityMeasurmentProject.genruntimeconfig.cache
