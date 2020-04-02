@@ -34,10 +34,20 @@ namespace NUnitTestQuantityMeasurment
         [Test]
         public void Ref_Check_ShouldReturFalse()
         {
-            Feet f1 = new Feet(11);
-            var result = this.Equals(f1);
-            Assert.IsFalse(result);
+            Feet f1 = new Feet(99);
+            var actual = this.Equals(f1);
+            Assert.IsFalse(actual);
         }
-
+        /// <summary>
+        /// Test Case 1.4 Type check
+        /// </summary>
+        [Test]
+        public void Type_Check_ShouldReturTrue()
+        {
+            Feet f = new Feet(21);
+            Feet f2 = new Feet(21);
+            var expect = f.ConvertFeetValue(f2);
+            Assert.IsTrue(expect);
+        }
     }
 }
