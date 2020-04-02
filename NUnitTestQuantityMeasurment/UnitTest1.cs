@@ -23,10 +23,20 @@ namespace NUnitTestQuantityMeasurment
         [Test]
         public void GivenNull_ShouldReturFalse()
         {
-            Feet ft1 = new Feet(11);
-            var actual = ft1.Equals(null);
-            Assert.IsFalse(actual);
+            Feet ft1 = new Feet(10);
+            var result = ft1.Equals(null);
+            Assert.IsFalse(result);
 
+        }
+        /// <summary>
+        /// Test case 1.3 (null check)
+        /// </summary>
+        [Test]
+        public void Ref_Check_ShouldReturFalse()
+        {
+            Feet f1 = new Feet(11);
+            var result = this.Equals(f1);
+            Assert.IsFalse(result);
         }
 
     }
