@@ -1,9 +1,16 @@
-﻿using System;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file=QualityMeasurment" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Sushanta das"/>
+// ----------------------------------------------------------------------------------------------------------------------
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace QuantityMeasurmentProject
 {
+
     public class Inches
     {
         int inch;
@@ -19,9 +26,9 @@ namespace QuantityMeasurmentProject
                 return true;
 
         }
-        public bool ConvertInchValue(Feet inch)
+        public bool ConvertInchValue(Inches inch)
         {
-            if (this.inch.Equals(inch))
+            if (this.inch.Equals(inch.inch))
                 return true;
             else
                 return false;
