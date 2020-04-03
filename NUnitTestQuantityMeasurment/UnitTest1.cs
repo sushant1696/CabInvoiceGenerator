@@ -160,6 +160,9 @@ namespace NUnitTestQuantityMeasurment
             var actual = test.ComparedFeetAndinchesValue(feet, inch);
             Assert.IsFalse(actual);
         }
+        /// <summary>
+        /// tc 1.15
+        /// </summary>
         [Test]
         public void Given1Feet_And_12Inch_ShouldReturnEqual()
         {
@@ -245,6 +248,54 @@ namespace NUnitTestQuantityMeasurment
             Yard rr2 = new Yard(999);
             var expect = rr.ConvertYardValue(rr2);
             Assert.IsFalse(expect);
+        }
+        /// <summary>
+        /// Test case 2.7
+        /// </summary>
+        [Test]
+        public void Given0Feet_And_0Yard_ShouldReturnEqual()
+        {
+            Feet feet = new Feet(0);
+            Yard yrd = new Yard(0);
+            FeedToYard test = new FeedToYard(feet, yrd);
+            var actual = test.ComparedFeetToYardValue(feet, yrd);
+            Assert.IsTrue(actual);
+        }
+        /// <summary>
+        /// TestCase 2.8
+        /// </summary>
+        [Test]
+        public void Given1Feet_And_1Inch_ShouldReturnFalseForFeetToYard()
+        {
+            Feet feet = new Feet(1);
+            Yard yrd = new Yard(1);
+           FeedToYard test = new FeedToYard(feet, yrd);
+            var actual = test.ComparedFeetToYardValue(feet, yrd);
+            Assert.IsFalse(actual);
+        }
+        /// <summary>
+        /// tc 2.9
+        /// </summary>
+        [Test]
+        public void Given3Feet_And_1yard_ShouldReturnEqualFeetToYard()
+        {
+            Yard yrd = new Yard(1);
+            Feet feet = new Feet(12 * yrd.yrd);
+            FeedToYard test = new FeedToYard(feet, yrd);
+            var actual = test.ComparedFeetToYardValue(feet, yrd);
+            Assert.IsTrue(actual);
+        }
+        /// <summary>
+        /// tc 2.10
+        /// </summary>
+        [Test]
+        public void Given3Feet_And_1Yard_ShouldReturnTrueFeetToYard()
+        {
+            Yard yrd = new Yard(12);
+            Feet feet = new Feet(1);
+            FeedToYard test = new FeedToYard(feet, yrd);
+            var actual = test.ComparedFeetToYardValue(feet, yrd);
+            Assert.IsTrue(actual);
         }
     }
 }
