@@ -136,5 +136,18 @@ namespace NUnitTestQuantityMeasurment
             var expect = inc.ConvertInchValue(inc2);
             Assert.IsFalse(expect);
         }
+        /// <summary>
+        /// Test case 1.13
+        /// </summary>
+        [Test]
+        public void Given0Feet_And_0Inch_ShouldReturnEqual()
+        {
+            Feet feet = new Feet(0);
+            Inches inch = new Inches(0);
+            FeetToInches test = new FeetToInches(feet, inch);
+            var actual = test.ComparedFeetAndinchesValue(feet, inch);
+            Assert.IsTrue(actual);
+        }
+       
     }
 }

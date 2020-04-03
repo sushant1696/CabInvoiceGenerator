@@ -13,8 +13,8 @@ namespace QuantityMeasurmentProject
 
     public class Inches
     {
-        int inch;
-        public Inches(int feet)
+        public double inch;
+        public Inches(int inch)
         {
             this.inch = inch;
         }
