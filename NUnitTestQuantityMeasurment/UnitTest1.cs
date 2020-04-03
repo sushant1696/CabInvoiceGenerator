@@ -181,5 +181,70 @@ namespace NUnitTestQuantityMeasurment
             var actual = test.ComparedFeetAndinchesValue(feet, inch);
             Assert.IsTrue(actual);
         }
+        /// <summary>
+        /// Test Case 2.1 where given 0 yard and return 0 yard equals
+        /// </summary>
+        [Test]
+        public void GivenFeet_ShouldReturnYardEqual()
+        {
+            Yard yr = new Yard(0);
+            Yard yr2 = new Yard(0);
+            var result = yr.ConvertYardValue(yr2);
+            Assert.IsTrue(result);
+        }
+        /// <summary>
+        /// test case 2.2 (null check)
+        /// </summary>
+        [Test]
+        public void GivenNull_ShouldReturFalseForYard()
+        {
+            Yard ft1 = new Yard(10);
+            var result = ft1.Equals(null);
+            Assert.IsFalse(result);
+
+        }
+        /// <summary>
+        /// Test case 2.3 (ref check)
+        /// </summary>
+        [Test]
+        public void Ref_Check_ShouldReturFalseYard()
+        {
+            Yard f1 = new Yard(99);
+            var actual = this.Equals(f1);
+            Assert.IsFalse(actual);
+        }
+        /// <summary>
+        /// Test Case 2.4 Type check
+        /// </summary>
+        [Test]
+        public void Type_Check_ShouldReturTrueYard()
+        {
+            Yard yrr = new Yard(21);
+            Yard yrr2 = new Yard(21);
+            var expect = yrr.ConvertYardValue(yrr2);
+            Assert.IsTrue(expect);
+        }
+        /// <summary>
+        /// Test Case 2.5 Type check
+        /// </summary>
+        [Test]
+        public void GivenSameValue_ShouldReturForYardTrue()
+        {
+            Yard r1 = new Yard(21);
+            Yard r2 = new Yard(21);
+            var expect = r1.ConvertYardValue(r2);
+            Assert.IsTrue(expect);
+        }
+        /// <summary>
+        /// Test Case 2.6 given diferent value
+        /// </summary>
+        [Test]
+        public void GivenDiferentValue_ShouldReturForYardFalse()
+        {
+            Yard rr = new Yard(21);
+            Yard rr2 = new Yard(999);
+            var expect = rr.ConvertYardValue(rr2);
+            Assert.IsFalse(expect);
+        }
     }
 }
