@@ -321,31 +321,159 @@ namespace NUnitTestQuantityMeasurment
             var actual = test.ComparedKilogramAndGramValue(kg, gm);
             Assert.IsFalse(actual);
         }
+        ///// <summary>
+        ///// tc 3.3
+        ///// </summary>
+        //[Test]
+        //public void Given1000gm_And_1kg_ShouldReturnEqualKgToGm()
+        //{
+        //    Kilogram kg = new Kilogram(1);
+        //    Gram gm = new Gram(1000 * gm.grm);
+        //    KilogramToGram test = new KilogramToGram(kg, gm);
+        //    var actual = test.ComparedKilogramAndGramValue(kg, gm);
+        //    Assert.IsTrue(actual);
+        //}
+        ///// <summary>
+        ///// tc 3.4
+        ///// </summary>
+        //[Test]
+        //public void Given1kg_And_1000gm_ShouldReturnTrueKgToGm()
+        //{
+        //    Kilogram kg = new Kilogram(1);
+        //    Gram gm = new Gram(1000 * gm.grm);
+        //    KilogramToGram test = new KilogramToGram(kg, gm);
+        //    var actual = test.ComparedKilogramAndGramValue(kg, gm);
+        //    Assert.IsTrue(actual);
+        //}
         /// <summary>
-        /// tc 3.3
+        /// Test Case 4.1 where given 0 feet and return 0 feet equals
         /// </summary>
         [Test]
-        public void Given1000gm_And_1kg_ShouldReturnEqualKgToGm()
+        public void GivencCelcius_ShouldReturnCelciusEqual()
         {
-            Kilogram kg = new Kilogram(1);
-            Gram gm = new Gram(1000 * gm.grm);
-            KilogramToGram test = new KilogramToGram(kg, gm);
-            var actual = test.ComparedKilogramAndGramValue(kg, gm);
-            Assert.IsTrue(actual);
+            Celcius ft = new Celcius(0);
+            Celcius ft2 = new Celcius(0);
+            var result = ft.ConvertCelciusValue(ft2);
+            Assert.IsTrue(result);
         }
         /// <summary>
-        /// tc 3.4
+        /// test case 4.2 (null check)
         /// </summary>
         [Test]
-        public void Given1kg_And_1000gm_ShouldReturnTrueKgToGm()
+        public void GivenNull_ShouldReturFalseCelcius()
         {
-            Kilogram kg = new Kilogram(1);
-            Gram gm = new Gram(1000 * gm.grm);
-            KilogramToGram test = new KilogramToGram(kg, gm);
-            var actual = test.ComparedKilogramAndGramValue(kg, gm);
-            Assert.IsTrue(actual);
+            Celcius ft1 = new Celcius(10);
+            var result = ft1.Equals(null);
+            Assert.IsFalse(result);
+
         }
+        /// <summary>
+        /// Test case 4.3 (null check)
+        /// </summary>
+        [Test]
+        public void Ref_Check_ShouldReturFalseCelcius()
+        {
+            Celcius f1 = new Celcius(99);
+            var actual = this.Equals(f1);
+            Assert.IsFalse(actual);
+        }
+        /// <summary>
+        /// Test Case 4.5 Type check
+        /// </summary>
+        [Test]
+        public void Type_Check_ShouldReturTrueCelcius()
+        {
+           Celcius f = new Celcius(21);
+            Celcius f2 = new Celcius(21);
+            var expect = f.ConvertCelciusValue(f2);
+            Assert.IsTrue(expect);
+        }
+        /// <summary>
+        /// Test Case 4.6 Type check
+        /// </summary>
+        [Test]
+        public void GivenSameValue_ShouldReturForTrueCelcius()
+        {
+            Celcius f = new Celcius(21);
+            Celcius f2 = new Celcius(21);
+            var expect = f.ConvertCelciusValue(f2);
+            Assert.IsTrue(expect);
+        }
+        /// <summary>
+        /// Test Case 4.7 given diferent value
+        /// </summary>
+        [Test]
+        public void GivenDiferentValue_ShouldReturForFalseCelcius()
+        {
+            Celcius f = new Celcius(21);
+            Celcius f2 = new Celcius(999);
+            var expect = f.ConvertCelciusValue(f2);
+            Assert.IsFalse(expect);
+        }
+        /// <summary>
+        /// Test Case 4.8 where given 0 Fahrenheit and return 0 Fahrenheit equals
+        /// </summary>
+        [Test]
+        public void GivencFahrenheit_ShouldReturnCelciusEqual()
+        {
+            Fahrenheit ft = new Fahrenheit(0);
+            Fahrenheit ft2 = new Fahrenheit(0);
+            var result = ft.ConvertFahrenheitValue(ft2);
+            Assert.IsTrue(result);
+        }
+        /// <summary>
+        /// test case 4.9 (null check)Fahrenheit
+        /// </summary>
+        [Test]
+        public void GivenNull_ShouldReturFalseFahrenheit()
+        {
+            Fahrenheit ft1 = new Fahrenheit(10);
+            var result = ft1.Equals(null);
+            Assert.IsFalse(result);
 
-
+        }
+        /// <summary>
+        /// Test case 4.10 (null check)Fahrenheit
+        /// </summary>
+        [Test]
+        public void Ref_Check_ShouldReturFalseFahrenheit()
+        {
+            Fahrenheit f1 = new Fahrenheit(99);
+            var actual = this.Equals(f1);
+            Assert.IsFalse(actual);
+        }
+        /// <summary>
+        /// Test Case 4.11 Type check
+        /// </summary>
+        [Test]
+        public void Type_Check_ShouldReturTrueFahrenheit()
+        {
+            Fahrenheit f = new Fahrenheit(21);
+            Fahrenheit f2 = new Fahrenheit(21);
+            var expect = f.ConvertFahrenheitValue(f2);
+            Assert.IsTrue(expect);
+        }
+        /// <summary>
+        /// Test Case 4.12 Type check
+        /// </summary>
+        [Test]
+        public void GivenSameValue_ShouldReturForTrueFahrenheit()
+        {
+            Fahrenheit f = new Fahrenheit(21);
+            Fahrenheit f2 = new Fahrenheit(21);
+            var expect = f.ConvertFahrenheitValue(f2);
+            Assert.IsTrue(expect);
+        }
+        /// <summary>
+        /// Test Case 4.13 given diferent value
+        /// </summary>
+        [Test]
+        public void GivenDiferentValue_ShouldReturForFalseFahrenheit()
+        {
+            Fahrenheit f = new Fahrenheit(21);
+            Fahrenheit f2 = new Fahrenheit(999);
+            var expect = f.ConvertFahrenheitValue(f2);
+            Assert.IsFalse(expect);
+        }
     }
 }

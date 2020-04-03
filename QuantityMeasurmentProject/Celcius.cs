@@ -4,7 +4,27 @@ using System.Text;
 
 namespace QuantityMeasurmentProject
 {
-    class Celcius
+  public  class Celcius
     {
+        public double clc;
+        public Celcius(double clc)
+        {
+            this.clc = clc;
+        }
+        public override bool Equals(object obj)
+        {
+            if (obj == null || !this.GetType().Equals(obj.GetType()))
+                return false;
+            else
+                return true;
+
+        }
+        public bool ConvertCelciusValue(Celcius clc)
+        {
+            if (this.clc.Equals(clc.clc))
+                return true;
+            else
+                return false;
+        }
     }
 }
