@@ -475,5 +475,53 @@ namespace NUnitTestQuantityMeasurment
             var expect = f.ConvertFahrenheitValue(f2);
             Assert.IsFalse(expect);
         }
+        /// <summary>
+        /// Test case 4.14
+        /// </summary>
+        [Test]
+        public void Given0fer_And_0cel_ShouldReturnEqual()
+        {
+            Celcius clc = new Celcius(0);
+            Fahrenheit frr = new Fahrenheit(0);
+            FerToCelcius test = new FerToCelcius(clc, frr);
+            var actual = test.ComparedFerToCelciusValue(clc, frr);
+            Assert.IsFalse(actual);
+        }
+        /// <summary>
+        /// TestCase 4.15
+        /// </summary>
+        [Test]
+        public void Given1cel_And_1fer_ShouldReturnFalseFerToCelcius()
+        {
+            Celcius clc = new Celcius(1);
+            Fahrenheit fr = new Fahrenheit(1);
+            FerToCelcius test = new FerToCelcius(clc, fr);
+            var actual = test.ComparedFerToCelciusValue(clc, fr);
+            Assert.IsFalse(actual);
+        }
+        /// <summary>
+        /// tc 4.16
+        /// </summary>
+        [Test]
+        public void Given33fer_And_1cel_ShouldReturnEqualFerToCelcius()
+        {
+            Celcius cl = new Celcius(1);
+            Fahrenheit fr = new Fahrenheit(33.8 * fr.fr);
+            FerToCelcius test = new FerToCelcius(cl, fr);
+            var actual = test.ComparedFerToCelciusValue(cl, fr);
+            Assert.IsTrue(actual);
+        }
+        /// <summary>
+        /// tc 4.17
+        /// </summary>
+        [Test]
+        public void Given33fer_And_1cel_ShouldReturnfalseFerToCelcius()
+        {
+            Celcius cc = new Celcius(1);
+            Fahrenheit ff = new Fahrenheit(33.8);
+            FerToCelcius test = new FerToCelcius(cc, ff);
+            var actual = test.ComparedFerToCelciusValue(cc, ff);
+            Assert.IsTrue(actual);
+        }
     }
 }
