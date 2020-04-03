@@ -13,7 +13,12 @@ namespace QuantityMeasurmentProject
             feet.feet = this.feet;
             inch.inch = this.inch;
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="feet"></param>
+        /// <param name="inch"></param>
+        /// <returns></returns>
         public bool ComparedFeetAndinchesValue(Feet feet, Inches inch)
         {
             if (feet.feet == 0 && feet.feet == inch.inch)

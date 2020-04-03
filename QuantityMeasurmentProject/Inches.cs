@@ -14,7 +14,7 @@ namespace QuantityMeasurmentProject
     public class Inches
     {
         public double inch;
-        public Inches(int inch)
+        public Inches(double inch)
         {
             this.inch = inch;
         }

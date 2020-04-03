@@ -10,7 +10,7 @@ namespace QuantityMeasurmentProject
     public class Feet
     {
         public double feet;
-        public Feet(int feet)
+        public Feet(double feet)
         {
             this.feet = feet;
         }

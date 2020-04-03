@@ -148,6 +148,38 @@ namespace NUnitTestQuantityMeasurment
             var actual = test.ComparedFeetAndinchesValue(feet, inch);
             Assert.IsTrue(actual);
         }
-       
+        /// <summary>
+        /// TestCase 1.14
+        /// </summary>
+        [Test]
+        public void Given1Feet_And_1Inch_ShouldReturnFalse()
+        {
+            Feet feet = new Feet(1);
+            Inches inch = new Inches(1);
+            FeetToInches test = new FeetToInches(feet, inch);
+            var actual = test.ComparedFeetAndinchesValue(feet, inch);
+            Assert.IsFalse(actual);
+        }
+        [Test]
+        public void Given1Feet_And_12Inch_ShouldReturnEqual()
+        {
+            Inches inch = new Inches(1);
+            Feet feet = new Feet(12 * inch.inch);
+            FeetToInches test = new FeetToInches(feet, inch);
+            var actual = test.ComparedFeetAndinchesValue(feet, inch);
+            Assert.IsTrue(actual);
+        }
+        /// <summary>
+        /// tc 1.16
+        /// </summary>
+         [Test]
+        public void Given12Inch_And_1feet_ShouldReturnTrue()
+        {
+            Inches inch = new Inches(12);
+            Feet feet = new Feet(1);
+            FeetToInches test = new FeetToInches(feet, inch);
+            var actual = test.ComparedFeetAndinchesValue(feet, inch);
+            Assert.IsTrue(actual);
+        }
     }
 }
