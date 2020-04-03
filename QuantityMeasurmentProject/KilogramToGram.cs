@@ -4,18 +4,18 @@ using System.Text;
 
 namespace QuantityMeasurmentProject
 {
-   public class KilogramToGram
+    public class KilogramToGram
     {
-        
+
         public double klgm;
         public double gram;
         public KilogramToGram(Kilogram klgm, Gram gram)
         {
-            this.klgm =klgm.klgm;
+            this.klgm = klgm.klgm;
             this.gram = gram.grm;
 
         }
-        public bool ComparedKelogramAndGramValue(Kilogram klg, Gram grrm)
+        public bool ComparedKilogramAndGramValue(Kilogram klg, Gram grrm)
         {
             if (this.klgm == 0 && (this.klgm.Equals(this.gram)))
                 return true;
@@ -26,5 +26,5 @@ namespace QuantityMeasurmentProject
             return false;
         }
     }
-    }
+
 }

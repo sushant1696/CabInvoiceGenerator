@@ -297,5 +297,55 @@ namespace NUnitTestQuantityMeasurment
             var actual = test.ComparedFeetToYardValue(feet, yrd);
             Assert.IsTrue(actual);
         }
+        /// <summary>
+        /// Test case 3.1
+        /// </summary>
+        [Test]
+        public void Given0Kg_And_0Gm_ShouldReturnEqual()
+        {
+            Kilogram kg = new Kilogram(0);
+            Gram gm = new Gram(0);
+            KilogramToGram test = new KilogramToGram(kg, gm);
+            var actual = test.ComparedKilogramAndGramValue(kg, gm);
+            Assert.IsTrue(actual);
+        }
+        /// <summary>
+        /// TestCase 3.2
+        /// </summary>
+        [Test]
+        public void Given1kg_And_1gm_ShouldReturnFalseForKgToGm()
+        {
+            Kilogram kg = new Kilogram(1);
+            Gram gm = new Gram(1);
+            KilogramToGram test = new KilogramToGram(kg,gm);
+            var actual = test.ComparedKilogramAndGramValue(kg, gm);
+            Assert.IsFalse(actual);
+        }
+        /// <summary>
+        /// tc 3.3
+        /// </summary>
+        [Test]
+        public void Given1000gm_And_1kg_ShouldReturnEqualKgToGm()
+        {
+            Kilogram kg = new Kilogram(1);
+            Gram gm = new Gram(1000 * gm.grm);
+            KilogramToGram test = new KilogramToGram(kg, gm);
+            var actual = test.ComparedKilogramAndGramValue(kg, gm);
+            Assert.IsTrue(actual);
+        }
+        /// <summary>
+        /// tc 3.4
+        /// </summary>
+        [Test]
+        public void Given1kg_And_1000gm_ShouldReturnTrueKgToGm()
+        {
+            Kilogram kg = new Kilogram(1);
+            Gram gm = new Gram(1000 * gm.grm);
+            KilogramToGram test = new KilogramToGram(kg, gm);
+            var actual = test.ComparedKilogramAndGramValue(kg, gm);
+            Assert.IsTrue(actual);
+        }
+
+
     }
 }

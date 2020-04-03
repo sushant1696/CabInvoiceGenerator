@@ -4,7 +4,7 @@ using System.Text;
 
 namespace QuantityMeasurmentProject
 {
-   public class Kilogram
+    public class Kilogram
     {
         public double klgm;
         public Kilogram(double klgm)

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace QuantityMeasurmentProject
 {
-   public class Gram
+    public class Gram
     {
         public double grm;
         public Gram(double grm)
@@ -19,7 +19,7 @@ namespace QuantityMeasurmentProject
                 return true;
 
         }
-        public bool ConvertFeetValue(Gram grm)
+        public bool ConvertGramValue(Gram grm)
         {
             if (this.grm.Equals(grm.grm))
                 return true;
