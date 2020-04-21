@@ -1,0 +1,13 @@
+E:\DOT NET\QuantyMeasurmentBackend\Model\bin\Debug\netcoreapp3.1\Model.exe
+E:\DOT NET\QuantyMeasurmentBackend\Model\bin\Debug\netcoreapp3.1\Model.deps.json
+E:\DOT NET\QuantyMeasurmentBackend\Model\bin\Debug\netcoreapp3.1\Model.runtimeconfig.json
+E:\DOT NET\QuantyMeasurmentBackend\Model\bin\Debug\netcoreapp3.1\Model.runtimeconfig.dev.json
+E:\DOT NET\QuantyMeasurmentBackend\Model\bin\Debug\netcoreapp3.1\Model.dll
+E:\DOT NET\QuantyMeasurmentBackend\Model\bin\Debug\netcoreapp3.1\Model.pdb
+E:\DOT NET\QuantyMeasurmentBackend\Model\obj\Debug\netcoreapp3.1\Model.csprojAssemblyReference.cache
+E:\DOT NET\QuantyMeasurmentBackend\Model\obj\Debug\netcoreapp3.1\Model.csproj.CoreCompileInputs.cache
+E:\DOT NET\QuantyMeasurmentBackend\Model\obj\Debug\netcoreapp3.1\Model.AssemblyInfoInputs.cache
+E:\DOT NET\QuantyMeasurmentBackend\Model\obj\Debug\netcoreapp3.1\Model.AssemblyInfo.cs
+E:\DOT NET\QuantyMeasurmentBackend\Model\obj\Debug\netcoreapp3.1\Model.dll
+E:\DOT NET\QuantyMeasurmentBackend\Model\obj\Debug\netcoreapp3.1\Model.pdb
+E:\DOT NET\QuantyMeasurmentBackend\Model\obj\Debug\netcoreapp3.1\Model.genruntimeconfig.cache
