@@ -23,6 +23,6 @@ namespace Model
         {
             return this.feet;
         }
-    
-}
+
+    }
 }

@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "AfXPJWI2Asu4eMTJvXPhqTgLuzbNJNaEfCiWeJjg/3nJi0VezVGpNUmiHagwGp5RjSuOC4tA3DKfVVTGed0Wpg==",
+  "dgSpecHash": "eTGY6RVMgQBDq4Uh9ycSpyRhQWdddA+yZzw0HiqUhR+YdpsNZT5rDvg6p9L8rkpVewAVyydtnTX9tEBgvR/szg==",
   "success": true,
   "projectFilePath": "E:\\DOT NET\\QuantyMeasurmentBackend\\Model\\Model.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.app\\2.1.0\\microsoft.netcore.app.2.1.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.dotnetapphost\\2.1.0\\microsoft.netcore.dotnetapphost.2.1.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.dotnethostpolicy\\2.1.0\\microsoft.netcore.dotnethostpolicy.2.1.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.dotnethostresolver\\2.1.0\\microsoft.netcore.dotnethostresolver.2.1.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.0\\microsoft.netcore.platforms.2.1.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.targets\\2.1.0\\microsoft.netcore.targets.2.1.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

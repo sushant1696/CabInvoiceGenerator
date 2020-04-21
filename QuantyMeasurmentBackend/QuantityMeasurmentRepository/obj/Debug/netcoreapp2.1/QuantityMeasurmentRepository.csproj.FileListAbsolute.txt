@@ -1,0 +1,15 @@
+E:\DOT NET\QuantyMeasurmentBackend\QuantityMeasurmentRepository\bin\Debug\netcoreapp2.1\QuantityMeasurmentRepository.deps.json
+E:\DOT NET\QuantyMeasurmentBackend\QuantityMeasurmentRepository\bin\Debug\netcoreapp2.1\QuantityMeasurmentRepository.runtimeconfig.json
+E:\DOT NET\QuantyMeasurmentBackend\QuantityMeasurmentRepository\bin\Debug\netcoreapp2.1\QuantityMeasurmentRepository.runtimeconfig.dev.json
+E:\DOT NET\QuantyMeasurmentBackend\QuantityMeasurmentRepository\bin\Debug\netcoreapp2.1\QuantityMeasurmentRepository.dll
+E:\DOT NET\QuantyMeasurmentBackend\QuantityMeasurmentRepository\bin\Debug\netcoreapp2.1\QuantityMeasurmentRepository.pdb
+E:\DOT NET\QuantyMeasurmentBackend\QuantityMeasurmentRepository\bin\Debug\netcoreapp2.1\Model.dll
+E:\DOT NET\QuantyMeasurmentBackend\QuantityMeasurmentRepository\bin\Debug\netcoreapp2.1\Model.pdb
+E:\DOT NET\QuantyMeasurmentBackend\QuantityMeasurmentRepository\obj\Debug\netcoreapp2.1\QuantityMeasurmentRepository.csprojAssemblyReference.cache
+E:\DOT NET\QuantyMeasurmentBackend\QuantityMeasurmentRepository\obj\Debug\netcoreapp2.1\QuantityMeasurmentRepository.csproj.CoreCompileInputs.cache
+E:\DOT NET\QuantyMeasurmentBackend\QuantityMeasurmentRepository\obj\Debug\netcoreapp2.1\QuantityMeasurmentRepository.AssemblyInfoInputs.cache
+E:\DOT NET\QuantyMeasurmentBackend\QuantityMeasurmentRepository\obj\Debug\netcoreapp2.1\QuantityMeasurmentRepository.AssemblyInfo.cs
+E:\DOT NET\QuantyMeasurmentBackend\QuantityMeasurmentRepository\obj\Debug\netcoreapp2.1\QuantityMeasurmentRepository.csproj.CopyComplete
+E:\DOT NET\QuantyMeasurmentBackend\QuantityMeasurmentRepository\obj\Debug\netcoreapp2.1\QuantityMeasurmentRepository.dll
+E:\DOT NET\QuantyMeasurmentBackend\QuantityMeasurmentRepository\obj\Debug\netcoreapp2.1\QuantityMeasurmentRepository.pdb
+E:\DOT NET\QuantyMeasurmentBackend\QuantityMeasurmentRepository\obj\Debug\netcoreapp2.1\QuantityMeasurmentRepository.genruntimeconfig.cache

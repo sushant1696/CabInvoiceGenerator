@@ -1,0 +1,17 @@
+E:\DOT NET\QuantyMeasurmentBackend\QuantityMeasurmentManager\bin\Debug\netcoreapp2.1\QuantityMeasurmentManager.deps.json
+E:\DOT NET\QuantyMeasurmentBackend\QuantityMeasurmentManager\bin\Debug\netcoreapp2.1\QuantityMeasurmentManager.runtimeconfig.json
+E:\DOT NET\QuantyMeasurmentBackend\QuantityMeasurmentManager\bin\Debug\netcoreapp2.1\QuantityMeasurmentManager.runtimeconfig.dev.json
+E:\DOT NET\QuantyMeasurmentBackend\QuantityMeasurmentManager\bin\Debug\netcoreapp2.1\QuantityMeasurmentManager.dll
+E:\DOT NET\QuantyMeasurmentBackend\QuantityMeasurmentManager\bin\Debug\netcoreapp2.1\QuantityMeasurmentManager.pdb
+E:\DOT NET\QuantyMeasurmentBackend\QuantityMeasurmentManager\bin\Debug\netcoreapp2.1\Model.dll
+E:\DOT NET\QuantyMeasurmentBackend\QuantityMeasurmentManager\bin\Debug\netcoreapp2.1\QuantityMeasurmentRepository.dll
+E:\DOT NET\QuantyMeasurmentBackend\QuantityMeasurmentManager\bin\Debug\netcoreapp2.1\QuantityMeasurmentRepository.pdb
+E:\DOT NET\QuantyMeasurmentBackend\QuantityMeasurmentManager\bin\Debug\netcoreapp2.1\Model.pdb
+E:\DOT NET\QuantyMeasurmentBackend\QuantityMeasurmentManager\obj\Debug\netcoreapp2.1\QuantityMeasurmentManager.csprojAssemblyReference.cache
+E:\DOT NET\QuantyMeasurmentBackend\QuantityMeasurmentManager\obj\Debug\netcoreapp2.1\QuantityMeasurmentManager.csproj.CoreCompileInputs.cache
+E:\DOT NET\QuantyMeasurmentBackend\QuantityMeasurmentManager\obj\Debug\netcoreapp2.1\QuantityMeasurmentManager.AssemblyInfoInputs.cache
+E:\DOT NET\QuantyMeasurmentBackend\QuantityMeasurmentManager\obj\Debug\netcoreapp2.1\QuantityMeasurmentManager.AssemblyInfo.cs
+E:\DOT NET\QuantyMeasurmentBackend\QuantityMeasurmentManager\obj\Debug\netcoreapp2.1\QuantityMeasurmentManager.csproj.CopyComplete
+E:\DOT NET\QuantyMeasurmentBackend\QuantityMeasurmentManager\obj\Debug\netcoreapp2.1\QuantityMeasurmentManager.dll
+E:\DOT NET\QuantyMeasurmentBackend\QuantityMeasurmentManager\obj\Debug\netcoreapp2.1\QuantityMeasurmentManager.pdb
+E:\DOT NET\QuantyMeasurmentBackend\QuantityMeasurmentManager\obj\Debug\netcoreapp2.1\QuantityMeasurmentManager.genruntimeconfig.cache
