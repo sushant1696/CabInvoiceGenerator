@@ -8,12 +8,12 @@ namespace QuantityMeasurmentManager
     public interface IManager
     {
         double FeetToInches(double feet);
-       /* Feet InchToFeetConverter(Inches inch);
-        Feet YardToFeetConverter(Yard yard);
-        Inches YardToInchConverter(Yard yard);
-        Gram KilogramToGramConverter(Kilogram kilogram);
-        Kilogram GramToKilogramConverter(Gram gram);
-        Fahranheit CelsiusToFahrenheitConverter(Celcius celsius);
-        Celcius FahrenheitToCelsiusCoverter(Fahranheit fahranheit);*/
+        double InchToFeet(double inch);
+        double CelsiusToFahranheit(double celsius);
+        double FahranheitToCelsius(double fahranheit);
+        Double KilogramToGramConverter(double kilogram);
+        Double GramToKilogramConverter(double gram);
+        double YardToFeetConverter(double yard);
+        double YardToInchConverter(double yard);
     }
 }

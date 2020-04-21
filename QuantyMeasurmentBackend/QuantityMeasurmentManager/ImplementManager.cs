@@ -15,52 +15,44 @@ namespace QuantityMeasurmentManager
             this.repository = repository;
         }
 
+        public double CelsiusToFahranheit(double celsius)
+        {
+            return repository.CelsiusToFahranheit(celsius);
+        }
+
+        public double FahranheitToCelsius(double fahranheit)
+        {
+            return repository.FahranheitToCelsius(fahranheit);
+        }
+
         public double FeetToInches(double feet)
         {
             return repository.FeetToInches(feet) ;
         }
-        //public Fahranheit CelsiusToFahrenheitConverter(Celcius celsius)
-        //{
-        //    var FahrenheitData = repository.CelsiusToFahrenheitConverter(celsius);
-        //        return FahrenheitData;
-        //}
 
-        //public Celcius FahrenheitToCelsiusCoverter(Fahranheit fahranheit)
-        //{
-        //    var celsiusData =repository.FahrenheitToCelsiusCoverter(fahranheit);
-        //    return celsiusData;
-        //}
+        public double GramToKilogramConverter(double gram)
+        {
+            return repository.GramToKilogramConverter(gram);
+        }
 
-        
+        public double InchToFeet(double inch)
+        {
+            return repository.InchToFeet(inch);
+        }
 
-        //public Kilogram GramToKilogramConverter(Gram gram)
-        //{
-        //    var kilogramData = repository.GramToKilogramConverter(gram);
-        //    return kilogramData;
-        //}
+        public double KilogramToGramConverter(double kilogram)
+        {
+            return repository.KilogramToGramConverter(kilogram);
+        }
 
-        //public Feet InchToFeetConverter(Inches inch)
-        //{
-        //    var inchValue = repository.InchToFeetConverter(inch);
-        //    return inchValue;
-        //}
+        public double YardToFeetConverter(double yard)
+        {
+            return repository.YardToFeetConverter(yard);
+        }
 
-        //public Gram KilogramToGramConverter(Kilogram kilogram)
-        //{
-        //    var gramdata = repository.KilogramToGramConverter(kilogram);
-        //    return gramdata;
-        //}
-
-        //public Feet YardToFeetConverter(Yard yard)
-        //{
-        //    var feetdata = repository.YardToFeetConverter(yard);
-        //    return feetdata;
-        //}
-
-        //public Inches YardToInchConverter(Yard yard)
-        //{
-        //    var inchdata = repository.YardToInchConverter(yard);
-        //    return inchdata;
-        //}
+        public double YardToInchConverter(double yard)
+        {
+            return repository.YardToInchConverter(yard);
+        }
     }
 }
