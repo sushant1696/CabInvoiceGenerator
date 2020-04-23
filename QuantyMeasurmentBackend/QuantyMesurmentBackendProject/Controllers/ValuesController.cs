@@ -27,7 +27,7 @@ namespace QuantyMesurmentBackendProject.Controllers
 
         [Route("api/FeetToInches")]
         [HttpPost]
-        public async Task<IActionResult> FeetToInchConverter(double feet)
+        public async Task<IActionResult>FeetToInchConverter(double feet)
         {
             var inchData = manager.FeetToInches(feet);
             if (inchData != 0.0)
@@ -73,22 +73,23 @@ namespace QuantyMesurmentBackendProject.Controllers
         }
         [Route("api/GramToKilogram")]
         [HttpPost]
-        public async Task<IActionResult> GramToKilogram(double celsius)
+
+        public async Task<ActionResult> GramToKilogram(double celsius)
         {
-            var gramData = manager.GramToKilogramConverter(celsius);
+            var gramData =manager.GramToKilogramConverter(celsius);
             if (gramData != 0.0)
                 return this.Ok(gramData);
             return this.BadRequest();
         }
         [Route("api/YardToFeet")]
         [HttpPost]
-        public async Task<IActionResult> YardToFeet(double yard)
+        public async Task<ActionResult> YardToFeet(double yard)
         {
-            var feetData = manager.YardToFeetConverter(yard);
+            var feetData =manager.YardToFeetConverter(yard);
             if (feetData != 0.0)
                 return this.Ok(feetData);
             return this.BadRequest();
-        }
+        } 
         [Route("api/YardToInch")]
         [HttpPost]
         public async Task<IActionResult> YardToInch(double yard)

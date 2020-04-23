@@ -1,4 +1,10 @@
-﻿using Model;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="ImplementManager.cs" company="Bridgelabz">
+//   Copyright © 2020 Company="BridgeLabz"
+// </copyright>
+// <creator name="Sushanta das"/>
+// ----------------------------------------------------------------------------------------------------------------
+using Model;
 using QuantityMeasurmentRepository;
 using System;
 using System.Collections.Generic;

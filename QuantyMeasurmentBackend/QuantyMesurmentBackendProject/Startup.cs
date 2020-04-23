@@ -6,13 +6,9 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
-
+using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Microsoft.Extensions.Configuration;
-
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-
 using QuantityMeasurmentManager;
 using QuantityMeasurmentRepository;
 using Swashbuckle.AspNetCore.Swagger;
@@ -33,8 +29,6 @@ namespace QuantyMesurmentBackendProject
        
         public void ConfigureServices(IServiceCollection services)
         {
-            // services.AddMvc(option => option.EnableEndpointRouting = false);
-            //services.AddTransient<IConverter, ImpConverter>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddTransient<IManager, ImplementManager>();
@@ -43,7 +37,9 @@ namespace QuantyMesurmentBackendProject
             {
                 c.SwaggerDoc("v1", new Info { Title = "QuantityMeasurementBackentProject", Version = "v1" });
             });
-            
+            services.Configure<KestrelServerOptions>(
+            Configuration.GetSection("Kestrel"));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

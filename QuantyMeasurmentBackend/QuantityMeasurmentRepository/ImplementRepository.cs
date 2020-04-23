@@ -1,4 +1,10 @@
-﻿using Model;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="ImplementManager.cs" company="Bridgelabz">
+//   Copyright © 2020 Company="BridgeLabz"
+// </copyright>
+// <creator name="Sushanta das"/>
+// ----------------------------------------------------------------------------------------------------------------
+using Model;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -7,11 +13,20 @@ namespace QuantityMeasurmentRepository
 {
     public class ImplementRepository : IRepository
     {
+        /// <summary>
+        ///  Implemeted method for converting Celsius To Fahranheit
+        /// </summary>
+        /// <param name="celsius"></param>
+        /// <returns></returns>
         public double CelsiusToFahranheit(double celsius)
         {
             return ((9 / 5) * celsius + 32);
         }
-
+        /// <summary>
+        /// Implemeted method for converting Fahranheit To Celsius
+        /// </summary>
+        /// <param name="fahranheit"></param>
+        /// <returns></returns>
         public double FahranheitToCelsius(double fahranheit)
         {
             return (fahranheit - 32) * 5 / 9;
@@ -42,16 +57,31 @@ namespace QuantityMeasurmentRepository
         {
             return inch/12;
         }
+        /// <summary>
+        /// Implemeted method for converting Kilogram To GramConverter
+        /// </summary>
+        /// <param name="kilogram"></param>
+        /// <returns></returns>
 
         public double KilogramToGramConverter(double kilogram)
         {
             return kilogram*1000;
         }
+        /// <summary>
+        /// Implemeted method for converting YardToFeetConverter
+        /// </summary>
+        /// <param name="yard"></param>
+        /// <returns></returns>
 
         public double YardToFeetConverter(double yard)
         {
             return yard * 3;
         }
+        /// <summary>
+        /// Implemeted method for converting Yard To Inch Converter
+        /// </summary>
+        /// <param name="yard"></param>
+        /// <returns></returns>
 
         public double YardToInchConverter(double yard)
         {
